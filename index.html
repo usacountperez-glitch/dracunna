@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dracuna DJ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+body{
+background: radial-gradient(circle at top,#3d1d63,#120022,#06000f);
+color:white;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:30px;
+font-size:40px;
+letter-spacing:5px;
+color:#e0d6ff;
+text-shadow:0 0 20px #caa8ff;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-bottom:40px;
+}
+
+nav button{
+padding:12px 30px;
+border-radius:10px;
+border:none;
+font-weight:bold;
+background:linear-gradient(#e4e4e4,#9c9c9c);
+color:black;
+box-shadow:
+inset 0 2px 4px white,
+0 3px 10px rgba(0,0,0,0.6);
+cursor:pointer;
+transition:0.3s;
+}
+
+nav button:hover{
+transform:translateY(-3px);
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:50px;
+padding:50px;
+flex-wrap:wrap;
+}
+
+.hero img{
+width:380px;
+border-radius:20px;
+box-shadow:0 0 40px rgba(255,255,255,0.3);
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:50px;
+margin-bottom:20px;
+color:#f2d9ff;
+}
+
+.hero-text p{
+opacity:0.8;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.main-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.main-buttons button{
+padding:15px 35px;
+border:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+
+background:linear-gradient(#e4e4e4,#9c9c9c);
+
+box-shadow:
+inset 0 3px 6px white,
+0 5px 15px rgba(0,0,0,0.8);
+
+cursor:pointer;
+transition:0.3s;
+}
+
+.main-buttons button:hover{
+transform:translateY(-3px);
+}
+
+/* MIXES */
+
+.section{
+padding:80px;
+text-align:center;
+}
+
+.mixes{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+width:260px;
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(8px);
+box-shadow:0 0 25px rgba(255,255,255,0.15);
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* EVENTS */
+
+.events{
+max-width:600px;
+margin:auto;
+margin-top:40px;
+}
+
+.event{
+display:flex;
+justify-content:space-between;
+padding:15px;
+margin-bottom:10px;
+
+background:linear-gradient(#e4e4e4,#9c9c9c);
+border-radius:10px;
+
+color:black;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:80px;
+padding:30px;
+text-align:center;
+background:#020003;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>DRACUNA</header>
+
+<nav>
+
+<button>MUSIC</button>
+<button>TOUR</button>
+<button>MIXES</button>
+<button>STYLE</button>
+<button>CONTACT</button>
+
+</nav>
+
+<section class="hero">
+
+<img src="images/dj1.jpg">
+
+<div class="hero-text">
+
+<h1>WELCOME TO THE FUTURE</h1>
+
+<p>Cyber rave electronic DJ experience.</p>
+
+<div class="main-buttons">
+
+<button>LISTEN NOW</button>
+<button>GET TICKETS</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>LATEST MIXES</h2>
+
+<div class="mixes">
+
+<div class="card">
+
+<img src="images/dj2.jpg">
+<p>Dreamscape EP</p>
+
+</div>
+
+<div class="card">
+
+<img src="images/dj3.jpg">
+<p>Cyber Wave Mix</p>
+
+</div>
+
+<div class="card">
+
+<img src="images/dj4.jpg">
+<p>Future Rave</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>UPCOMING EVENTS</h2>
+
+<div class="events">
+
+<div class="event">
+
+<span>02.15.24 Dream Rave</span>
+<span>London</span>
+
+</div>
+
+<div class="event">
+
+<span>03.08.24 Club Neon</span>
+<span>Tokyo</span>
+
+</div>
+
+<div class="event">
+
+<span>03.25.24 Future Fest</span>
+<span>Paris</span>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 DRACUNA
+
+</footer>
+
+</body>
+</html>
