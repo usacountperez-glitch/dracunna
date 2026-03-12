@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cyber Y2K Room</title>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+
+document.addEventListener("mousemove", function(e){
+
+let sparkle = document.createElement("div");
+
+sparkle.style.position = "fixed";
+sparkle.style.left = e.clientX + "px";
+sparkle.style.top = e.clientY + "px";
+sparkle.style.width = "6px";
+sparkle.style.height = "6px";
+sparkle.style.background = "hotpink";
+sparkle.style.borderRadius = "50%";
+sparkle.style.pointerEvents = "none";
+sparkle.style.zIndex = "999";
+
+document.body.appendChild(sparkle);
+
+setTimeout(()=>{
+sparkle.remove();
+},500);
+
+});
+
+</script>
+<body>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Music</a>
+<a href="#">Gallery</a>
+<a href="#">About</a>
+</div>
+
+<h1 class="title">DracunnaDj</h1>
+
+
+<div class="stars"></div>
+<div class="sparkles"></div>
+<div class="scanlines"></div>
+
+
+</body>
+</html>
