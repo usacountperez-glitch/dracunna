@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dracunna DJ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+/* BACKGROUND Y2K */
+
+body{
+
+background:
+linear-gradient(135deg,#12002f,#300060,#0c0020);
+
+color:white;
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+}
+
+/* NEON GRID */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+height:50vh;
+
+background:
+
+repeating-linear-gradient(
+to right,
+rgba(255,0,255,.2) 0px,
+rgba(255,0,255,.2) 2px,
+transparent 2px,
+transparent 80px
+),
+
+repeating-linear-gradient(
+to top,
+rgba(0,255,255,.2) 0px,
+rgba(0,255,255,.2) 2px,
+transparent 2px,
+transparent 80px
+);
+
+transform:perspective(600px) rotateX(60deg);
+
+animation:gridmove 10s linear infinite;
+
+}
+
+@keyframes gridmove{
+
+0%{background-position:0 0,0 0}
+100%{background-position:200px 0,0 200px}
+
+}
+
+/* HEADER */
+
+header{
+
+text-align:center;
+
+font-size:60px;
+
+padding:40px;
+
+letter-spacing:4px;
+
+background:linear-gradient(#fff,#bfa8ff);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+text-shadow:0 0 20px #a66cff;
+
+}
+
+/* NAV */
+
+nav{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+margin-bottom:40px;
+
+flex-wrap:wrap;
+
+}
+
+/* CHROME BUTTONS */
+
+button{
+
+padding:12px 28px;
+
+border-radius:14px;
+
+border:none;
+
+font-weight:bold;
+
+background:linear-gradient(
+180deg,
+#ffffff,
+#e5e5e5,
+#bcbcbc,
+#ffffff
+);
+
+box-shadow:
+
+inset 0 2px 5px #fff,
+0 6px 15px rgba(0,0,0,.8);
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 20px #c26bff;
+
+}
+
+/* HERO */
+
+.hero{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:50px;
+
+flex-wrap:wrap;
+
+padding:60px;
+
+}
+
+.hero img{
+
+width:420px;
+
+border-radius:20px;
+
+box-shadow:0 0 40px #ff70ff;
+
+}
+
+/* SECTION */
+
+section{
+
+padding:80px 40px;
+
+text-align:center;
+
+}
+
+/* CARDS */
+
+.cards{
+
+display:flex;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+margin-top:30px;
+
+}
+
+.card{
+
+width:260px;
+
+background:rgba(255,255,255,.08);
+
+padding:15px;
+
+border-radius:20px;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 0 20px rgba(255,255,255,.2);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 30px #ff7bff;
+
+}
+
+.card img{
+
+width:100%;
+
+border-radius:14px;
+
+margin-bottom:10px;
+
+}
+
+/* EVENTS */
+
+.events{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+.event{
+
+background:linear-gradient(#fff,#cfcfcf,#9f9f9f);
+
+color:black;
+
+padding:12px;
+
+margin:10px 0;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:space-between;
+
+font-weight:bold;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:60px;
+
+background:black;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>DRACUNNA DJ</header>
+
+<nav>
+
+<button>Music</button>
+<button>Mixes</button>
+<button>Events</button>
+<button>Gallery</button>
+<button>Contact</button>
+
+</nav>
+
+<div class="hero">
+
+<img src="images/hero.jpg">
+
+<div>
+
+<h1>WELCOME TO THE FUTURE</h1>
+
+<p>Cyber rave DJ experience</p>
+
+<button>Listen Now</button>
+
+</div>
+
+</div>
+
+<section>
+
+<h2>Latest Mixes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/mix1.jpg">
+
+Dreamscape Mix
+
+</div>
+
+<div class="card">
+
+<img src="images/mix2.jpg">
+
+Cyber Wave
+
+</div>
+
+<div class="card">
+
+<img src="images/mix3.jpg">
+
+Future Rave
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Gallery</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/gallery1.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="images/gallery2.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="images/gallery3.jpg">
+
+</div>
+
+<div class="card">
+
+<img src="images/gallery4.jpg">
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Events</h2>
+
+<div class="events">
+
+<div class="event">
+
+<span>Rossstream</span>
+
+<span>Bogotá</span>
+
+</div>
+
+<div class="event">
+
+<span>Abyssal Rite</span>
+
+<span>Berlin</span>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Dracunna DJ
+
+</footer>
+
+</body>
+</html>
