@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cyber Y2K DJ Page</title>
+
+<style>
+
+body{
+margin:0;
+font-family: Arial;
+background: url("images/city.gif");
+background-size: cover;
+color:white;
+text-align:center;
+}
+
+/* barra */
+
+.nav{
+background: rgba(0,0,0,0.7);
+padding:15px;
+}
+
+.nav button{
+background: hotpink;
+border:none;
+padding:10px 20px;
+margin:5px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+border-radius:20px;
+}
+
+/* secciones */
+
+.section{
+display:none;
+padding:40px;
+}
+
+.active{
+display:block;
+}
+
+/* galeria */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery img{
+width:250px;
+border-radius:15px;
+box-shadow:0 0 15px hotpink;
+}
+
+/* player */
+
+.player{
+margin-top:30px;
+}
+
+</style>
+
+<script>
+
+function openTab(tab){
+let sections=document.querySelectorAll(".section")
+
+sections.forEach(s=>{
+s.classList.remove("active")
+})
+
+document.getElementById(tab).classList.add("active")
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="nav">
+
+<button onclick="openTab('home')">Home</button>
+<button onclick="openTab('gallery')">Fotos</button>
+<button onclick="openTab('music')">DJ</button>
+
+</div>
+
+<div id="home" class="section active">
+
+<h1>Cyber Y2K Page</h1>
+
+<p>Bienvenido a mi página estilo 2000 cyberpunk</p>
+
+</div>
+
+
+<div id="gallery" class="section">
+
+<h2>Fotos</h2>
+
+<div class="gallery">
+
+<img src="images/foto1.jpg">
+<img src="images/foto2.jpg">
+<img src="images/foto3.jpg">
+
+</div>
+
+</div>
+
+
+<div id="music" class="section">
+
+<h2>DJ Player</h2>
+
+<div class="player">
+
+<audio controls>
+
+<source src="music/song.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+</div>
+
+</body>
+</html>
