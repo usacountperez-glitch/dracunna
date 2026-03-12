@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DJ DRACUNA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Orbitron',sans-serif;
+}
+
+/* BACKGROUND */
+
+body{
+
+background:
+radial-gradient(circle at 20% 20%,#8e5cff 0%,transparent 40%),
+radial-gradient(circle at 80% 80%,#2fd4ff 0%,transparent 40%),
+linear-gradient(#120024,#05000d);
+
+color:white;
+
+}
+
+/* HEADER */
+
+header{
+
+text-align:center;
+font-size:60px;
+letter-spacing:6px;
+padding:30px;
+
+background:linear-gradient(#ffffff,#cfcfff,#8f8fdc);
+-webkit-background-clip:text;
+color:transparent;
+
+text-shadow:
+0 0 20px #bbaaff,
+0 0 40px #6b45ff;
+
+}
+
+/* NAV */
+
+nav{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding-bottom:40px;
+
+}
+
+/* SILVER BUTTON */
+
+.silver{
+
+padding:14px 40px;
+
+border-radius:12px;
+
+border:1px solid #ffffff90;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#e3e3e3,
+#bcbcbc,
+#a0a0a0
+);
+
+color:#111;
+
+font-weight:bold;
+
+box-shadow:
+
+inset 0 2px 6px rgba(255,255,255,1),
+inset 0 -3px 6px rgba(0,0,0,0.4),
+0 5px 20px rgba(0,0,0,0.8);
+
+cursor:pointer;
+
+transition:all .3s ease;
+
+}
+
+.silver:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 0 20px #9c7aff,
+0 5px 25px rgba(0,0,0,0.9);
+
+}
+
+/* HERO */
+
+.hero{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+
+padding:60px;
+
+}
+
+.hero img{
+
+width:420px;
+
+border-radius:20px;
+
+box-shadow:
+
+0 0 25px #a688ff,
+0 0 60px #3c2aff;
+
+}
+
+.hero-text{
+
+max-width:450px;
+
+}
+
+.hero-text h1{
+
+font-size:48px;
+
+margin-bottom:20px;
+
+text-shadow:
+
+0 0 20px #a57cff,
+0 0 40px #5d2bff;
+
+}
+
+.hero-text p{
+
+opacity:0.85;
+margin-bottom:30px;
+
+}
+
+/* SECTION */
+
+.section{
+
+padding:90px;
+text-align:center;
+
+}
+
+/* MIXES */
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+.card{
+
+width:260px;
+padding:20px;
+
+border-radius:15px;
+
+background:rgba(255,255,255,0.05);
+
+backdrop-filter:blur(6px);
+
+box-shadow:0 0 25px rgba(164,118,255,0.6);
+
+transition:.3s;
+
+}
+
+.card img{
+
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* EVENTS */
+
+.events{
+
+max-width:650px;
+margin:auto;
+margin-top:40px;
+
+}
+
+.event{
+
+display:flex;
+justify-content:space-between;
+
+padding:14px;
+
+margin-bottom:12px;
+
+border-radius:10px;
+
+background:
+linear-gradient(
+180deg,
+#ffffff,
+#cfcfcf,
+#9a9a9a
+);
+
+color:black;
+
+font-weight:bold;
+
+box-shadow:
+
+inset 0 3px 5px white,
+0 4px 15px black;
+
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:80px;
+text-align:center;
+padding:30px;
+
+background:#020003;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>DRACUNA</header>
+
+<nav>
+
+<button class="silver">MUSIC</button>
+<button class="silver">TOUR</button>
+<button class="silver">STYLE</button>
+<button class="silver">MIXES</button>
+<button class="silver">CONTACT</button>
+
+</nav>
+
+<section class="hero">
+
+<img src="images/dj1.jpg">
+
+<div class="hero-text">
+
+<h1>WELCOME TO THE FUTURE</h1>
+
+<p>Cyber rave electronic DJ experience.</p>
+
+<button class="silver">LISTEN NOW</button>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Latest Mixes</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="images/dj2.jpg">
+Dreamscape EP
+
+</div>
+
+<div class="card">
+
+<img src="images/dj3.jpg">
+Cyber Wave Mix
+
+</div>
+
+<div class="card">
+
+<img src="images/dj4.jpg">
+Future Rave
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Upcoming Events</h2>
+
+<div class="events">
+
+<div class="event">
+
+<span>02.15.24 Dream Rave</span>
+<span>London</span>
+
+</div>
+
+<div class="event">
+
+<span>03.08.24 Club Neon</span>
+<span>Tokyo</span>
+
+</div>
+
+<div class="event">
+
+<span>03.25.24 Future Fest</span>
+<span>Paris</span>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 DRACUNA
+
+</footer>
+
+<script>
+
+/* simple scroll animation */
+
+document.querySelectorAll("button").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:"smooth"
+})
+
+})
+
+})
+
+</script>
+
+</body>
+</html>
